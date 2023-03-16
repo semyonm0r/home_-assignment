@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "nginx.fullname" .  | join "index-cm" }}
+  labels:
+    {{- include "nginx.labels" . | nindent 4 }}
+data:
+  index.html: |
+    <html>
+    </br>
+    <h1>Hi! This is a {{ .Release.Name }} landing page</h1>
+    </html
