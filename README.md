@@ -4,8 +4,9 @@
    Deploy 2 deployments (+ a service for each) with some web server that serves static
    content.
    Use helm chart for defining all the k8s resources.
-2. Install nginx ingress controller and configure the following ingress rules: 1.
-```http://NGINX_CONTROLLER_URL/service1/index.html > service 1 2.
+2. Install nginx ingress controller and configure the following ingress rules:
+```
+http://NGINX_CONTROLLER_URL/service1/index.html > service 1
 ```
 ```
 http://NGINX_CONTROLLER_URL/service2/index.html > service 2
